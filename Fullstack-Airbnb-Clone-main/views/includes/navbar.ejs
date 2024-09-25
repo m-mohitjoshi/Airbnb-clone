@@ -1,0 +1,59 @@
+<div class="navbar fixed-top">
+  <div class="main-icon">
+      <i class="fa-brands fa-airbnb"></i>
+      <a href="/listings">Airbnb</a>
+  </div>
+
+  <div class="new-listing">
+      <a class="btn btn-outline-danger" href="/listings/new"><i class="fa-solid fa-location-dot"></i>Airbnb your home</a>
+  </div>
+
+  <div class="account">
+      <a href="/listings">All listings</a>
+      <div class="dropdown">
+          <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              
+              <% if(currUser){ %>
+                <i class="fa-regular fa-user"></i>Hey, <%=currUser.username%>
+              <% } %>
+              <% if(!currUser){ %>
+                <i class="fa-regular fa-user"></i> Your Account
+              <% } %>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-light">
+            <% if(!currUser){ %>
+              <li><a class="dropdown-item" href="/signup"><i class="fa-solid fa-user-gear"></i><b>Signup</b></a></li>
+              <li><a class="dropdown-item" href="/login"><i class="fa-solid fa-user-check"></i><b>Login</b></a></li>
+            <% } %>
+            <% if(currUser){ %>
+              <li><a class="dropdown-item" href="/logout"><i class="fa-solid fa-user-large-slash"></i><b>Logout</b></a></li>
+            <% } %>
+          </ul>
+        </div>
+  </div>
+
+  <div class="mini">
+      
+      <div class="dropdown">
+          <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-regular fa-user"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-light">
+            <% if(!currUser){ %>
+              <li><a class="dropdown-item" href="/signup"><i class="fa-solid fa-user-gear"></i><b>Signup</b></a></li>
+              <li><a class="dropdown-item" href="/login"><i class="fa-solid fa-user-check"></i><b>Login</b></a></li>
+            <% } %>
+            <% if(currUser){ %>
+              <li><a class="dropdown-item" href="/listings"><i class="fa-solid fa-regular fa-user"></i><b> <%=currUser.username%></b></a></li>
+              <li><a class="dropdown-item" href="/logout"><i class="fa-solid fa-user-large-slash"></i><b>Logout</b></a></li>
+            <% } %>
+          </ul>
+      </div>
+      <div class="mini-new">
+          <a class="btn btn-outline-danger" href="/listings/new"><i class="fa-solid fa-house-chimney"></i>New</a>
+      </div>
+      <div class="map">
+        <a class="btn btn-outline-dark" href="/map"><i class="fa-solid fa-map-location-dot"></i>Map</a>
+      </div>
+  </div>
+</div>

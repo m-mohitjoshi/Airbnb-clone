@@ -1,0 +1,26 @@
+<% layout("/layouts/boilerplate") -%>
+
+<h2 class="explore">Explore &#127759;</h2>
+<div class="map-box">
+  <div id="map" style="height: 200px; width: 1000px;"></div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Coordinates for the center of the map
+    const coordinates = [28.7041, 77.1025]; // [lat, lng]
+
+    // Initialize the map
+    const map = L.map('map').setView(coordinates, 8);
+
+    // Add the OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Add a marker
+    const marker = L.marker(coordinates).addTo(map)
+      .bindPopup('<h5>Default Location</h5><p>Exact location will be shown here.</p>')
+      .openPopup();
+  });
+</script>

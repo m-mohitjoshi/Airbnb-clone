@@ -1,0 +1,457 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  margin: 0;
+  padding-top: 70px;
+}
+
+/* navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  height: 70px;
+  background-color: white;
+  border-bottom: 0.1px solid rgb(217, 209, 209);
+  padding-left: 0.7rem !important;
+  padding-right: 0.7rem !important;
+}
+
+.new-listing .btn-outline-danger {
+  width: 250px;
+}
+
+.btn-outline-danger {
+  border-radius: 20px !important;
+  transition: 0.2s;
+}
+
+.btn-outline-danger:hover i {
+  transform: rotate(360deg);
+  transition: transform 0.5s ease;
+}
+
+.fa-airbnb {
+  font-size: 40px;
+  color: #fe424d;
+  margin-right: 0.5rem;
+}
+
+.fa-house-chimney,
+.fa-map-location-dot {
+  margin-right: 0.5rem;
+}
+
+.fa-location-dot {
+  margin-right: 1rem;
+}
+
+.main-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-icon a {
+  position: relative;
+  color: #fe424d;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.account {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.account a {
+  position: relative;
+  top: 6px;
+  padding-right: 1rem;
+  text-decoration: none;
+  color: #222222;
+}
+
+/* hamburger */
+.mini {
+  display: flex;
+  justify-content: space-evenly;
+  width: 290px;
+}
+
+.dropdown i {
+  margin-right: 0.5rem;
+}
+
+.mini-new i {
+  padding-top: 8px;
+}
+
+.dropdown-item {
+  opacity: 0.7;
+}
+
+.dropdown-item:hover {
+  opacity: 1;
+}
+
+.mini-new .btn-outline-danger {
+  position: relative;
+  padding: 0 !important;
+  height: 35px;
+  width: 70px;
+}
+
+.btn-outline-dark {
+  position: relative;
+  padding-top: 4px !important;
+  height: 35px;
+  width: 90px;
+  border-radius: 20px !important;
+}
+
+.mini {
+  display: none;
+}
+
+/* Cards */
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 2.5rem !important;
+  margin-right: 2.5rem !important;
+}
+
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+
+.card-img-top {
+  border-radius: 20px !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.card-text p {
+  font-weight: 400;
+}
+
+.listing-link {
+  text-decoration: none;
+}
+
+#map {
+  height: 400px;
+  width: 600px;
+  border-radius: 10px;
+}
+
+.filters,
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 0.6rem;
+}
+
+.filters {
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1.4rem;
+}
+
+.filter {
+  text-align: center;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  opacity: 0.8;
+}
+
+.filter:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.filter p {
+  font-size: 0.8rem;
+}
+
+.tax-info {
+  display: none;
+}
+
+.tax-toggle {
+  display: flex;
+  align-items: center;
+  border: 0.5px solid rgb(185, 181, 181);
+  border-radius: 15px !important;
+  height: 3rem;
+  padding: 0.6rem;
+}
+
+.form-check-input {
+  height: 25px !important;
+  width: 55px !important ;
+}
+
+.form-check-label {
+  position: relative;
+  top: 2.5px;
+  padding: 0.1rem !important;
+  padding-right: 1rem !important;
+}
+
+.map-nav {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  justify-content: space-between;
+}
+
+.map-nav .map .btn {
+  height: 45px;
+  width: 150px;
+  border-radius: 20px;
+}
+
+.map-nav .map i {
+  padding-top: 9px;
+  padding-right: 4px;
+}
+
+.explore {
+  text-align: center;
+}
+
+.map-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-div, .login-div, .signup-div{
+  display: flex;
+  margin: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-div{
+  width: 600px;
+}
+
+.edit-dlt {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  padding: 1rem;
+}
+
+.edit-dlt form {
+  padding-left: 2rem;
+}
+
+.show-parent {
+  margin: 4rem;
+}
+
+.main-show {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-card{
+  border-style: none !important;
+}
+
+.added-review {
+  width: 280px;
+}
+
+.review-info {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-review {
+  width: 500px;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-review {
+  height: 100%;
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.added-review {
+  margin-top: 20px;
+}
+
+.map-info {
+  text-align: center;
+}
+
+#map{
+  height: 500px !important;
+}
+
+img {
+  transition: 0.2s ease-in-out;
+}
+
+img:hover {
+  /* transform: scale(1.1); */
+  filter: blur(0) brightness(70%);
+}
+
+
+
+
+@media (max-width: 1310px) {
+  .main-show {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .listing-name{
+    text-align:center !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .img-card {
+    width: 30rem !important;
+  }
+}
+
+@media (max-width: 630px) {
+  #map {
+    width: 30rem !important;
+  }
+}
+
+@media (max-width: 501px) {
+  .img-card {
+    left: 2px;
+    width: 25rem !important;
+  }
+  #map {
+    width: 25rem !important;
+  }
+}
+
+@media (max-width: 440px) {
+  .img-card {
+    left: 1px;
+  }
+  #map {
+    left: 1px;
+    width: 25rem !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .img-card {
+    left: 1px;
+    width: 24rem !important;
+  }
+  #map {
+    left: 1px;
+    width: 24rem !important;
+  }
+}
+
+@media (max-width: 670px) {
+  .mini {
+    display: flex;
+  }
+  .account {
+    display: none;
+  }
+  .new-listing {
+    display: none;
+  }
+  .map-nav .map {
+    display: none;
+  }
+  #map {
+    height: 600px;
+    width: 500px;
+  }
+  .options{
+    display: none;
+  }
+  .tax-toggle{
+    margin-top: 1rem !important;
+  }
+}
+
+@media (max-width: 433px) {
+  .mini {
+    width: 240px;
+  }
+  #map {
+    height: 600px;
+    width: 380px;
+  }
+}
+
+
+
+@media (max-width: 412px) {
+  .img-card {
+    left: 2px;
+    width: 23rem !important;
+  }
+  #map {
+    left: 5px !important;
+    width: 23rem !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .mini {
+    width: 200px;
+  }
+  .img-card {
+    left: 5px;
+    width: 21rem !important;
+  }
+  #map {
+    left: 5px !important;
+    width: 21rem !important;
+  }
+}
+
+@media (max-width: 1136px) {
+  .map-nav {
+    justify-content: space-evenly;
+  }
+  .filters {
+    justify-content: space-evenly;
+  }
+  
+}
